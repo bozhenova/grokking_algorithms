@@ -1,3 +1,5 @@
+//Selection sort
+
 "use strict";
 
 function findSmallest(arr) {
