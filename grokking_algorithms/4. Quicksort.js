@@ -23,3 +23,18 @@ function count(array) {
 }
 
 count([2, 4, 6]);
+
+//max number function
+function maxNum(array) {
+  if (!array.length) {
+    return null;
+  } else if (array.length === 1) {
+    return array[0];
+  } else if (array.length === 2) {
+    return array[0] > array[1] ? array[0] : array[1];
+  }
+  const subMax = maxNum(array.slice(1));
+  return array[0] > subMax ? array[0] : subMax;
+}
+
+maxNum([4, 2, 10]);
