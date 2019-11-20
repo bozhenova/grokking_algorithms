@@ -12,3 +12,14 @@ function sum(arr) {
 }
 
 sum([2, 4, 6]);
+
+//recursive count function
+
+function count(array) {
+  if (!array.length) {
+    return 0;
+  }
+  return 1 + count(array.slice(1));
+}
+
+count([2, 4, 6]);
